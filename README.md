@@ -18,7 +18,7 @@ To use the 404 Brotherhood CSS Framework in your project, include the following 
 
 ### CSS
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/404-brotherhood-css-framework@1.0.0/dist/404-brotherhood.min.css">
+<link rel="stylesheet" href="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.css">
 ```
 
 ### JavaScript
@@ -36,7 +36,7 @@ Add the above links to your HTML file like this:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/404-brotherhood-css-framework@1.0.0/dist/404-brotherhood.min.css">
+    <link rel="stylesheet" href="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.css">
 </head>
 <body>
     <h1 class="b4-text-2xl b4-font-bold b4-text-primary">Hello, 404 Brotherhood!</h1>
