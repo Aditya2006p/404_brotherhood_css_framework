@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Brotherhood CSS Framework</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Main.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar-fixed b4-py-3 b4-px-4">
+        <div class="b4-container">
+            <div class="b4-flex b4-justify-between b4-items-center">
+                <div class="b4-flex b4-items-center">
+                    <h1 class="b4-text-2xl b4-font-bold b4-text-primary b4-m-0">
+                        <i class="fas fa-code b4-mr-2"></i> 404 Brotherhood
+                    </h1>
+                    <span class="b4-text-sm b4-text-muted b4-ml-2">Crafting UI, One Class at a Time</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="desktop-menu b4-flex b4-items-center">
+                    <a href="#home" class="b4-text-dark b4-mx-3 hover:b4-text-primary">Home</a>
+                    <a href="#grid" class="b4-text-dark b4-mx-3 hover:b4-text-primary">Grid System</a>
+                    <a href="#utilities" class="b4-text-dark b4-mx-3 hover:b4-text-primary">Utilities</a>
+                    <a href="#components" class="b4-text-dark b4-mx-3 hover:b4-text-primary">Components</a>
+                    <a href="#code-editor" class="b4-text-dark b4-mx-3 hover:b4-text-primary">Code Editor</a>
+                    
+                    <div class="dark-mode-toggle b4-flex b4-items-center b4-ml-4">
+                        <i class="fas fa-sun"></i>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <i class="fas fa-moon b4-ml-1"></i>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="mobile-menu-items" id="mobileMenuItems">
+                        <a href="#home">Home</a>
+                        <a href="#grid">Grid System</a>
+                        <a href="#utilities">Utilities</a>
+                        <a href="#components">Components</a>
+                        <a href="#code-editor">Code Editor</a>
+                        
+                        <div class="dark-mode-toggle b4-flex b4-items-center b4-mt-4">
+                            <span>Dark Mode</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="mobileToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="b4-container b4-py-5" style="margin-top: 80px; min-height: 90vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="b4-row b4-items-center">
+            <div class="b4-col-12 b4-col-md-6">
+                <h2 class="b4-text-5xl b4-font-bold b4-mb-4">Build beautiful websites with 404 Brotherhood CSS</h2>
+                <p class="b4-text-lg b4-text-muted b4-mb-4">
+                    A utility-first CSS framework for rapidly building custom user interfaces without relying on pre-built components.
+                </p>
+                <div class="b4-flex b4-mt-5">
+                    <a href="#grid" class="b4-btn b4-btn-primary b4-mr-3">Get Started</a>
+                    <a href="#code-editor" class="b4-btn b4-btn-outline-primary">Try it out</a>
+                </div>
+            </div>
+            <div class="b4-col-12 b4-col-md-6 b4-mt-5 b4-mt-md-0">
+                <div class="code-example">
+                    <div class="code-example-header">
+                        <span>Example</span>
+                    </div>
+                    <div class="code-example-preview">
+                        <div class="b4-card component-animate">
+                            <div class="b4-card-body">
+                                <h5 class="b4-card-title">404 Brotherhood</h5>
+                                <p class="b4-card-text">A lightweight, flexible CSS framework built for modern web applications.</p>
+                                <button class="b4-btn b4-btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-example-body">
+                        <pre><code class="language-html">&lt;div class="b4-card"&gt;
+  &lt;div class="b4-card-body"&gt;
+    &lt;h5 class="b4-card-title"&gt;404 Brotherhood&lt;/h5&gt;
+    &lt;p class="b4-card-text"&gt;A lightweight, flexible CSS framework 
+    built for modern web applications.&lt;/p&gt;
+    &lt;button class="b4-btn b4-btn-primary"&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down b4-mt-2"></i>
+        </div>
+    </section>
+
+    <!-- Grid System Section -->
+    <section id="grid" class="b4-container b4-py-5">
+        <h2 class="section-title">12-Column Grid System</h2>
+        <p class="b4-mb-5">Our responsive 12-column grid system helps you create flexible layouts for any screen size. Built with Flexbox, it allows for complex grid layouts with ease.</p>
+        
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Basic Grid Example</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Code Example</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-row">
+                        <div class="b4-col-12 b4-col-md-6 b4-col-lg-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-6 b4-col-lg-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-12 b4-col-lg-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-row"&gt;
+  &lt;div class="b4-col-12 b4-col-md-6 b4-col-lg-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-6 b4-col-lg-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-12 b4-col-lg-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Mixed Column Sizes</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Code Example</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-row">
+                        <div class="b4-col-12 b4-col-md-8">
+                            <div class="grid-demo-box">Col 8</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                    </div>
+                    <div class="b4-row b4-mt-3">
+                        <div class="b4-col-12 b4-col-md-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-4">
+                            <div class="grid-demo-box">Col 4</div>
+                        </div>
+                    </div>
+                    <div class="b4-row b4-mt-3">
+                        <div class="b4-col-12 b4-col-md-6">
+                            <div class="grid-demo-box">Col 6</div>
+                        </div>
+                        <div class="b4-col-12 b4-col-md-6">
+                            <div class="grid-demo-box">Col 6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-row"&gt;
+  &lt;div class="b4-col-12 b4-col-md-8"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 8&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="b4-row b4-mt-3"&gt;
+  &lt;div class="b4-col-12 b4-col-md-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-4"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="b4-row b4-mt-3"&gt;
+  &lt;div class="b4-col-12 b4-col-md-6"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-col-12 b4-col-md-6"&gt;
+    &lt;div class="grid-demo-box"&gt;Col 6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Interactive Grid Demo</h3>
+            <p class="b4-mb-3">Drag and drop the elements to create your own layout:</p>
+            
+            <div class="grid-interactive" id="gridInteractiveDemo">
+                <div class="b4-row" id="interactiveRow">
+                    <div class="b4-col-12 b4-col-md-4" draggable="true">
+                        <div class="grid-demo-box">Column 1</div>
+                    </div>
+                    <div class="b4-col-12 b4-col-md-4" draggable="true">
+                        <div class="grid-demo-box">Column 2</div>
+                    </div>
+                    <div class="b4-col-12 b4-col-md-4" draggable="true">
+                        <div class="grid-demo-box">Column 3</div>
+                    </div>
+                </div>
+                
+                <div class="b4-mt-4" id="editor-controls">
+                    <button id="addColumnBtn" class="b4-btn b4-btn-primary b4-btn-sm">Add Column</button>
+                    <button id="resetLayoutBtn" class="b4-btn b4-btn-outline-primary b4-btn-sm b4-ml-2">Reset Layout</button>
+                    
+                    <div class="b4-mt-3">
+                        <label for="columnWidthSelector" class="b4-mr-2">Column width:</label>
+                        <select id="columnWidthSelector" class="b4-p-1 b4-border b4-rounded">
+                            <option value="1">1/12</option>
+                            <option value="2">2/12</option>
+                            <option value="3">3/12</option>
+                            <option value="4" selected>4/12</option>
+                            <option value="6">6/12</option>
+                            <option value="12">12/12</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utility Classes Section -->
+    <section id="utilities" class="b4-container b4-py-5">
+        <h2 class="section-title">Utility Classes</h2>
+        <p class="b4-mb-5">404 Brotherhood provides a comprehensive set of utility classes for spacing, typography, flexbox, colors, and more to help you build interfaces quickly without writing custom CSS.</p>
+        
+        <!-- Typography -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Typography</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Typography Scale</span>
+                </div>
+                <div class="code-example-preview">
+                    <p class="b4-text-xs">Text Extra Small (.b4-text-xs)</p>
+                    <p class="b4-text-sm">Text Small (.b4-text-sm)</p>
+                    <p class="b4-text-base">Text Base (.b4-text-base)</p>
+                    <p class="b4-text-lg">Text Large (.b4-text-lg)</p>
+                    <p class="b4-text-xl">Text Extra Large (.b4-text-xl)</p>
+                    <p class="b4-text-2xl">Text 2XL (.b4-text-2xl)</p>
+                    <p class="b4-text-3xl">Text 3XL (.b4-text-3xl)</p>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;p class="b4-text-xs"&gt;Text Extra Small&lt;/p&gt;
+&lt;p class="b4-text-sm"&gt;Text Small&lt;/p&gt;
+&lt;p class="b4-text-base"&gt;Text Base&lt;/p&gt;
+&lt;p class="b4-text-lg"&gt;Text Large&lt;/p&gt;
+&lt;p class="b4-text-xl"&gt;Text Extra Large&lt;/p&gt;
+&lt;p class="b4-text-2xl"&gt;Text 2XL&lt;/p&gt;
+&lt;p class="b4-text-3xl"&gt;Text 3XL&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Font Weights</span>
+                </div>
+                <div class="code-example-preview">
+                    <p class="b4-font-light">Light Text (.b4-font-light)</p>
+                    <p class="b4-font-normal">Normal Text (.b4-font-normal)</p>
+                    <p class="b4-font-medium">Medium Text (.b4-font-medium)</p>
+                    <p class="b4-font-semibold">Semibold Text (.b4-font-semibold)</p>
+                    <p class="b4-font-bold">Bold Text (.b4-font-bold)</p>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;p class="b4-font-light"&gt;Light Text&lt;/p&gt;
+&lt;p class="b4-font-normal"&gt;Normal Text&lt;/p&gt;
+&lt;p class="b4-font-medium"&gt;Medium Text&lt;/p&gt;
+&lt;p class="b4-font-semibold"&gt;Semibold Text&lt;/p&gt;
+&lt;p class="b4-font-bold"&gt;Bold Text&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Spacing -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Spacing</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Margin Examples</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-bg-primary b4-p-2 b4-text-center b4-text-light">
+                        Base Element
+                    </div>
+                    <div class="b4-mt-1 spacing-demo">Margin Top 1 (.b4-mt-1)</div>
+                    <div class="b4-mt-2 spacing-demo">Margin Top 2 (.b4-mt-2)</div>
+                    <div class="b4-mt-3 spacing-demo">Margin Top 3 (.b4-mt-3)</div>
+                    <div class="b4-mt-4 spacing-demo">Margin Top 4 (.b4-mt-4)</div>
+                    <div class="b4-mt-5 spacing-demo">Margin Top 5 (.b4-mt-5)</div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-bg-primary b4-p-2 b4-text-center b4-text-light"&gt;
+  Base Element
+&lt;/div&gt;
+&lt;div class="b4-mt-1"&gt;Margin Top 1&lt;/div&gt;
+&lt;div class="b4-mt-2"&gt;Margin Top 2&lt;/div&gt;
+&lt;div class="b4-mt-3"&gt;Margin Top 3&lt;/div&gt;
+&lt;div class="b4-mt-4"&gt;Margin Top 4&lt;/div&gt;
+&lt;div class="b4-mt-5"&gt;Margin Top 5&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Padding Examples</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-bg-primary b4-text-center b4-text-light b4-p-1">Padding 1 (.b4-p-1)</div>
+                    <div class="b4-bg-primary b4-text-center b4-text-light b4-p-2 b4-mt-3">Padding 2 (.b4-p-2)</div>
+                    <div class="b4-bg-primary b4-text-center b4-text-light b4-p-3 b4-mt-3">Padding 3 (.b4-p-3)</div>
+                    <div class="b4-bg-primary b4-text-center b4-text-light b4-p-4 b4-mt-3">Padding 4 (.b4-p-4)</div>
+                    <div class="b4-bg-primary b4-text-center b4-text-light b4-p-5 b4-mt-3">Padding 5 (.b4-p-5)</div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-bg-primary b4-text-center b4-text-light b4-p-1"&gt;
+  Padding 1
+&lt;/div&gt;
+&lt;div class="b4-bg-primary b4-text-center b4-text-light b4-p-2 b4-mt-3"&gt;
+  Padding 2
+&lt;/div&gt;
+&lt;div class="b4-bg-primary b4-text-center b4-text-light b4-p-3 b4-mt-3"&gt;
+  Padding 3
+&lt;/div&gt;
+&lt;div class="b4-bg-primary b4-text-center b4-text-light b4-p-4 b4-mt-3"&gt;
+  Padding 4
+&lt;/div&gt;
+&lt;div class="b4-bg-primary b4-text-center b4-text-light b4-p-5 b4-mt-3"&gt;
+  Padding 5
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flexbox -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Flexbox & Alignment</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Flex Direction</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-flex b4-flex-row b4-mb-3">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Item 1</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Item 2</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light">Item 3</div>
+                    </div>
+                    <div class="b4-flex b4-flex-col">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mb-2">Item 1</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mb-2">Item 2</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light">Item 3</div>
+                    </div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;!-- Flex Row --&gt;
+&lt;div class="b4-flex b4-flex-row b4-mb-3"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Item 1&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Item 2&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Flex Column --&gt;
+&lt;div class="b4-flex b4-flex-col"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mb-2"&gt;Item 1&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mb-2"&gt;Item 2&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Alignment</span>
+                </div>
+                <div class="code-example-preview">
+                    <div class="b4-flex b4-justify-start b4-mb-3 b4-p-2 b4-border">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Start</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Start</div>
+                    </div>
+                    <div class="b4-flex b4-justify-center b4-mb-3 b4-p-2 b4-border">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Center</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">Center</div>
+                    </div>
+                    <div class="b4-flex b4-justify-end b4-mb-3 b4-p-2 b4-border">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">End</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2">End</div>
+                    </div>
+                    <div class="b4-flex b4-justify-between b4-mb-3 b4-p-2 b4-border">
+                        <div class="b4-p-2 b4-bg-primary b4-text-light">Between</div>
+                        <div class="b4-p-2 b4-bg-primary b4-text-light">Between</div>
+                    </div>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;!-- Justify Content: Start --&gt;
+&lt;div class="b4-flex b4-justify-start b4-mb-3 b4-p-2 b4-border"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Start&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Start&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Justify Content: Center --&gt;
+&lt;div class="b4-flex b4-justify-center b4-mb-3 b4-p-2 b4-border"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Center&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;Center&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Justify Content: End --&gt;
+&lt;div class="b4-flex b4-justify-end b4-mb-3 b4-p-2 b4-border"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;End&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light b4-mr-2"&gt;End&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Justify Content: Space Between --&gt;
+&lt;div class="b4-flex b4-justify-between b4-mb-3 b4-p-2 b4-border"&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light"&gt;Between&lt;/div&gt;
+  &lt;div class="b4-p-2 b4-bg-primary b4-text-light"&gt;Between&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Colors -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Color System</h3>
+            <p class="b4-mb-3">Our color system provides consistent, accessible colors with light and dark mode support.</p>
+            
+            <div class="b4-row">
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-primary">
+                        <div class="color-info">
+                            Primary<br>
+                            <code>.b4-bg-primary</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-secondary">
+                        <div class="color-info">
+                            Secondary<br>
+                            <code>.b4-bg-secondary</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-success">
+                        <div class="color-info">
+                            Success<br>
+                            <code>.b4-bg-success</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-danger">
+                        <div class="color-info">
+                            Danger<br>
+                            <code>.b4-bg-danger</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-warning">
+                        <div class="color-info">
+                            Warning<br>
+                            <code>.b4-bg-warning</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-info">
+                        <div class="color-info">
+                            Info<br>
+                            <code>.b4-bg-info</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-dark">
+                        <div class="color-info">
+                            Dark<br>
+                            <code>.b4-bg-dark</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="b4-col-6 b4-col-md-3 b4-mb-4">
+                    <div class="color-box b4-bg-light" style="color: #333">
+                        <div class="color-info" style="color: white">
+                            Light<br>
+                            <code>.b4-bg-light</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="b4-row b4-mt-4">
+                <div class="b4-col-12">
+                    <div class="code-example">
+                        <div class="code-example-header">
+                            <span>Text Colors</span>
+                        </div>
+                        <div class="code-example-preview">
+                            <p class="b4-text-primary">Primary Text (.b4-text-primary)</p>
+                            <p class="b4-text-secondary">Secondary Text (.b4-text-secondary)</p>
+                            <p class="b4-text-success">Success Text (.b4-text-success)</p>
+                            <p class="b4-text-danger">Danger Text (.b4-text-danger)</p>
+                            <p class="b4-text-warning">Warning Text (.b4-text-warning)</p>
+                            <p class="b4-text-info">Info Text (.b4-text-info)</p>
+                            <p class="b4-text-dark">Dark Text (.b4-text-dark)</p>
+                            <p class="b4-text-muted">Muted Text (.b4-text-muted)</p>
+                        </div>
+                        <div class="code-example-body">
+                            <pre><code class="language-html">&lt;p class="b4-text-primary"&gt;Primary Text&lt;/p&gt;
+&lt;p class="b4-text-secondary"&gt;Secondary Text&lt;/p&gt;
+&lt;p class="b4-text-success"&gt;Success Text&lt;/p&gt;
+&lt;p class="b4-text-danger"&gt;Danger Text&lt;/p&gt;
+&lt;p class="b4-text-warning"&gt;Warning Text&lt;/p&gt;
+&lt;p class="b4-text-info"&gt;Info Text&lt;/p&gt;
+&lt;p class="b4-text-dark"&gt;Dark Text&lt;/p&gt;
+&lt;p class="b4-text-muted"&gt;Muted Text&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="b4-container b4-py-5">
+        <h2 class="section-title">Components</h2>
+        <p class="b4-mb-5">404 Brotherhood provides a set of reusable components built using our utility classes. These components are simple, customizable, and easy to integrate into your projects.</p>
+        
+        <!-- Buttons -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Buttons</h3>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span>Button Styles</span>
+                </div>
+                <div class="code-example-preview">
+                    <button class="b4-btn b4-btn-primary b4-mr-2 b4-mb-2">Primary Button</button>
+                    <button class="b4-btn b4-btn-secondary b4-mr-2 b4-mb-2">Secondary Button</button>
+                    <button class="b4-btn b4-btn-outline-primary b4-mr-2 b4-mb-2">Outline Primary</button>
+                    <button class="b4-btn b4-btn-outline-secondary b4-mr-2 b4-mb-2">Outline Secondary</button>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;button class="b4-btn b4-btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="b4-btn b4-btn-secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="b4-btn b4-btn-outline-primary"&gt;Outline Primary&lt;/button&gt;
+&lt;button class="b4-btn b4-btn-outline-secondary"&gt;Outline Secondary&lt;/button&gt;</code></pre>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Button Sizes</span>
+                </div>
+                <div class="code-example-preview">
+                    <button class="b4-btn b4-btn-primary b4-btn-sm b4-mr-2 b4-mb-2">Small Button</button>
+                    <button class="b4-btn b4-btn-primary b4-mr-2 b4-mb-2">Default Button</button>
+                    <button class="b4-btn b4-btn-primary b4-btn-lg b4-mr-2 b4-mb-2">Large Button</button>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;button class="b4-btn b4-btn-primary b4-btn-sm"&gt;Small Button&lt;/button&gt;
+&lt;button class="b4-btn b4-btn-primary"&gt;Default Button&lt;/button&gt;
+&lt;button class="b4-btn b4-btn-primary b4-btn-lg"&gt;Large Button&lt;/button&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cards -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Cards</h3>
+            <div class="b4-row">
+                <div class="b4-col-12 b4-col-md-6 b4-col-lg-4 b4-mb-4">
+                    <div class="b4-card component-animate">
+                        <div class="b4-card-body">
+                            <h5 class="b4-card-title">Basic Card</h5>
+                            <p class="b4-card-text">This is a basic card component with a title and text content.</p>
+                            <button class="b4-btn b4-btn-primary">Action</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="b4-col-12 b4-col-md-6 b4-col-lg-4 b4-mb-4">
+                    <div class="b4-card component-animate">
+                        <div class="b4-card-body">
+                            <h5 class="b4-card-title">Feature Card</h5>
+                            <p class="b4-card-text">Cards can be used to highlight features or services.</p>
+                            <button class="b4-btn b4-btn-outline-primary">Learn More</button>
+                        </div>
+                        <div class="b4-card-footer">
+                            <small class="b4-text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="b4-col-12 b4-col-md-6 b4-col-lg-4 b4-mb-4">
+                    <div class="b4-card component-animate">
+                        <div class="b4-card-body">
+                            <h5 class="b4-card-title">Product Card</h5>
+                            <p class="b4-card-text">Cards work great for product displays or pricing tables.</p>
+                            <div class="b4-flex b4-justify-between b4-items-center">
+                                <span class="b4-text-primary b4-font-bold">$29.99</span>
+                                <button class="b4-btn b4-btn-secondary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Card Component</span>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-card"&gt;
+  &lt;div class="b4-card-body"&gt;
+    &lt;h5 class="b4-card-title"&gt;Card Title&lt;/h5&gt;
+    &lt;p class="b4-card-text"&gt;This is a basic card component with a title and text content.&lt;/p&gt;
+    &lt;button class="b4-btn b4-btn-primary"&gt;Action&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Card with footer --&gt;
+&lt;div class="b4-card"&gt;
+  &lt;div class="b4-card-body"&gt;
+    &lt;h5 class="b4-card-title"&gt;Card with Footer&lt;/h5&gt;
+    &lt;p class="b4-card-text"&gt;This card has a footer section for additional information.&lt;/p&gt;
+    &lt;button class="b4-btn b4-btn-outline-primary"&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="b4-card-footer"&gt;
+    &lt;small class="b4-text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Alerts -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Alerts</h3>
+            <div class="b4-alert b4-alert-info b4-mb-3">
+                <strong>Info!</strong> This is an informational alert.
+            </div>
+            <div class="b4-alert b4-alert-success b4-mb-3">
+                <strong>Success!</strong> Your action was completed successfully.
+            </div>
+            <div class="b4-alert b4-alert-warning b4-mb-3">
+                <strong>Warning!</strong> Be careful with this action.
+            </div>
+            <div class="b4-alert b4-alert-danger b4-mb-3">
+                <strong>Danger!</strong> Something went wrong.
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Alert Components</span>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;div class="b4-alert b4-alert-info"&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; This is an informational alert.
+&lt;/div&gt;
+
+&lt;div class="b4-alert b4-alert-success"&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; Your action was completed successfully.
+&lt;/div&gt;
+
+&lt;div class="b4-alert b4-alert-warning"&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; Be careful with this action.
+&lt;/div&gt;
+
+&lt;div class="b4-alert b4-alert-danger"&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; Something went wrong.
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="b4-mb-5">
+            <h3 class="b4-text-xl b4-font-semibold b4-mb-3">Modal</h3>
+            <button class="b4-btn b4-btn-primary" id="openModalBtn">Open Modal</button>
+            
+            <div class="b4-modal" id="demoModal">
+                <div class="b4-modal-dialog">
+                    <div class="b4-modal-content">
+                        <div class="b4-modal-header">
+                            <h5 class="b4-modal-title">Modal Title</h5>
+                            <button type="button" class="b4-btn-close" id="closeModalBtn">&times;</button>
+                        </div>
+                        <div class="b4-modal-body">
+                            <p>This is a modal dialog built with 404 Brotherhood CSS. You can use it to display important information or to gather user input.</p>
+                        </div>
+                        <div class="b4-modal-footer">
+                            <button type="button" class="b4-btn b4-btn-secondary" id="cancelModalBtn">Close</button>
+                            <button type="button" class="b4-btn b4-btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-example b4-mt-4">
+                <div class="code-example-header">
+                    <span>Modal Component</span>
+                </div>
+                <div class="code-example-body">
+                    <pre><code class="language-html">&lt;!-- Button to open modal --&gt;
+&lt;button class="b4-btn b4-btn-primary" id="openModalBtn"&gt;Open Modal&lt;/button&gt;
+
+&lt;!-- Modal Component --&gt;
+&lt;div class="b4-modal" id="demoModal"&gt;
+  &lt;div class="b4-modal-dialog"&gt;
+    &lt;div class="b4-modal-content"&gt;
+      &lt;div class="b4-modal-header"&gt;
+        &lt;h5 class="b4-modal-title"&gt;Modal Title&lt;/h5&gt;
+        &lt;button type="button" class="b4-btn-close" id="closeModalBtn"&gt;&times;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="b4-modal-body"&gt;
+        &lt;p&gt;This is a modal dialog built with 404 Brotherhood CSS.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="b4-modal-footer"&gt;
+        &lt;button type="button" class="b4-btn b4-btn-secondary" id="cancelModalBtn"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="b4-btn b4-btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  // JavaScript to open/close the modal
+  document.getElementById('openModalBtn').addEventListener('click', function() {
+    document.getElementById('demoModal').classList.add('show');
+  });
+  
+  document.getElementById('closeModalBtn').addEventListener('click', function() {
+    document.getElementById('demoModal').classList.remove('show');
+  });
+  
+  document.getElementById('cancelModalBtn').addEventListener('click', function() {
+    document.getElementById('demoModal').classList.remove('show');
+  });
+&lt;/script&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Editor Section -->
+    <section id="code-editor" class="b4-container b4-py-5">
+        <h2 class="section-title">Code Editor</h2>
+        <p class="b4-mb-5">Try out 404 Brotherhood CSS by writing your own HTML code. See the changes in real-time as you type.</p>
+        
+        <div class="b4-row">
+            <div class="b4-col-12 b4-col-lg-6">
+                <h4 class="b4-mb-3">HTML Editor</h4>
+                <textarea id="htmlEditor" class="code-editor" spellcheck="false">
+<div class="b4-container">
+  <div class="b4-row">
+    <div class="b4-col-12 b4-col-md-6">
+      <div class="b4-card">
+        <div class="b4-card-body">
+          <h5 class="b4-card-title">404 Brotherhood</h5>
+          <p class="b4-card-text b4-text-muted">A lightweight, flexible CSS framework.</p>
+          <button class="b4-btn b4-btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="b4-col-12 b4-col-md-6">
+      <div class="b4-p-4 b4-bg-light b4-rounded">
+        <h5 class="b4-text-xl b4-mb-2">Build quickly</h5>
+        <p>Use our utility classes to build custom components.</p>
+        <div class="b4-alert b4-alert-info b4-mt-3">
+          <strong>Tip!</strong> Try changing this code and see the result.
+        </div>
+      </div>
+    </div>
+  </div>
+</div></textarea>
+            </div>
+            <div class="b4-col-12 b4-col-lg-6">
+                <h4 class="b4-mb-3">Live Preview</h4>
+                <div id="previewPane" class="preview-area"></div>
+            </div>
+        </div>
+        
+        <div class="b4-mt-4">
+            <h4 class="b4-mb-3">Template Examples</h4>
+            <div class="b4-flex b4-flex-wrap">
+                <button class="b4-btn b4-btn-outline-primary b4-mr-2 b4-mb-2" data-template="basic">Basic Layout</button>
+                <button class="b4-btn b4-btn-outline-primary b4-mr-2 b4-mb-2" data-template="card">Card Component</button>
+                <button class="b4-btn b4-btn-outline-primary b4-mr-2 b4-mb-2" data-template="hero">Hero Section</button>
+                <button class="b4-btn b4-btn-outline-primary b4-mr-2 b4-mb-2" data-template="form">Form Example</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="b4-bg-dark b4-text-light b4-py-5 b4-mt-5">
+        <div class="b4-container">
+            <div class="b4-row">
+                <div class="b4-col-12 b4-col-md-4 b4-mb-4 b4-mb-md-0">
+                    <h4 class="b4-text-xl b4-mb-3">404 Brotherhood</h4>
+                    <p>A utility-first CSS framework for rapidly building custom user interfaces without relying on pre-built components.</p>
+                </div>
+                <div class="b4-col-12 b4-col-md-2 b4-mb-4 b4-mb-md-0">
+                    <h5 class="b4-text-lg b4-mb-3">Framework</h5>
+                    <ul class="b4-p-0" style="list-style: none;">
+                        <li class="b4-mb-2"><a href="#grid" class="b4-text-light">Grid System</a></li>
+                        <li class="b4-mb-2"><a href="#utilities" class="b4-text-light">Utilities</a></li>
+                        <li class="b4-mb-2"><a href="#components" class="b4-text-light">Components</a></li>
+                    </ul>
+                </div>
+                <div class="b4-col-12 b4-col-md-2 b4-mb-4 b4-mb-md-0">
+                    <h5 class="b4-text-lg b4-mb-3">Resources</h5>
+                    <ul class="b4-p-0" style="list-style: none;">
+                        <li class="b4-mb-2"><a href="#" class="b4-text-light">Documentation</a></li>
+                        <li class="b4-mb-2"><a href="#" class="b4-text-light">Templates</a></li>
+                        <li class="b4-mb-2"><a href="#" class="b4-text-light">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="b4-col-12 b4-col-md-4">
+                    <h5 class="b4-text-lg b4-mb-3">Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <div class="b4-flex">
+                        <input type="email" placeholder="Enter your email" class="b4-p-2 b4-rounded-none b4-border b4-rounded-l" style="flex: 1; border-right: none;">
+                        <button class="b4-btn b4-btn-primary b4-rounded-r b4-rounded-none">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="b4-mt-5 b4-pt-4 b4-border-top b4-text-center">
+                <p>© 2023 404 Brotherhood. Crafting UI, One Class at a Time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.min.js"></script>
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const mobileToggle = document.getElementById('mobileToggle');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            
+            // Sync both toggles
+            darkModeToggle.checked = isDarkMode;
+            mobileToggle.checked = isDarkMode;
+            
+            // Save preference
+            localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+        }
+        
+        darkModeToggle.addEventListener('change', toggleDarkMode);
+        mobileToggle.addEventListener('change', toggleDarkMode);
+        
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+            mobileToggle.checked = true;
+        }
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuItems = document.getElementById('mobileMenuItems');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuItems.classList.toggle('show');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenuItems.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuItems.classList.remove('show');
+            });
+        });
+        
+        // Modal functionality
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const cancelModalBtn = document.getElementById('cancelModalBtn');
+        const demoModal = document.getElementById('demoModal');
+        
+        openModalBtn.addEventListener('click', function() {
+            demoModal.classList.add('show');
+        });
+        
+        closeModalBtn.addEventListener('click', function() {
+            demoModal.classList.remove('show');
+        });
+        
+        cancelModalBtn.addEventListener('click', function() {
+            demoModal.classList.remove('show');
+        });
+        
+        // Close modal when clicking outside
+        demoModal.addEventListener('click', function(event) {
+            if (event.target === demoModal) {
+                demoModal.classList.remove('show');
+            }
+        });
+        
+        // Interactive Grid Demo
+        let draggedItem = null;
+        
+        function setupDraggableGrid() {
+            const columns = document.querySelectorAll('#interactiveRow > div');
+            
+            columns.forEach(column => {
+                column.addEventListener('dragstart', function() {
+                    draggedItem = this;
+                    setTimeout(() => this.style.opacity = '0.5', 0);
+                });
+                
+                column.addEventListener('dragend', function() {
+                    draggedItem = null;
+                    setTimeout(() => this.style.opacity = '1', 0);
+                });
+                
+                column.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                });
+                
+                column.addEventListener('dragenter', function(e) {
+                    e.preventDefault();
+                    this.style.background = 'rgba(79, 70, 229, 0.1)';
+                });
+                
+                column.addEventListener('dragleave', function() {
+                    this.style.background = 'none';
+                });
+                
+                column.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    if (draggedItem !== this) {
+                        const allColumns = Array.from(document.querySelectorAll('#interactiveRow > div'));
+                        const draggedIndex = allColumns.indexOf(draggedItem);
+                        const targetIndex = allColumns.indexOf(this);
+                        
+                        const interactiveRow = document.getElementById('interactiveRow');
+                        
+                        if (draggedIndex < targetIndex) {
+                            interactiveRow.insertBefore(draggedItem, this.nextSibling);
+                        } else {
+                            interactiveRow.insertBefore(draggedItem, this);
+                        }
+                    }
+                    this.style.background = 'none';
+                });
+            });
+        }
+        
+        // Run setup for draggable grid
+        setupDraggableGrid();
+        
+        // Add column button
+        document.getElementById('addColumnBtn').addEventListener('click', function() {
+            const columnWidth = document.getElementById('columnWidthSelector').value;
+            const newColumn = document.createElement('div');
+            newColumn.className = `b4-col-12 b4-col-md-${columnWidth}`;
+            newColumn.draggable = true;
+            newColumn.innerHTML = `<div class="grid-demo-box">New Column</div>`;
+            
+            document.getElementById('interactiveRow').appendChild(newColumn);
+            
+            // Reset draggable functionality
+            setupDraggableGrid();
+        });
+        
+        // Reset layout button
+        document.getElementById('resetLayoutBtn').addEventListener('click', function() {
+            document.getElementById('interactiveRow').innerHTML = `
+                <div class="b4-col-12 b4-col-md-4" draggable="true">
+                    <div class="grid-demo-box">Column 1</div>
+                </div>
+                <div class="b4-col-12 b4-col-md-4" draggable="true">
+                    <div class="grid-demo-box">Column 2</div>
+                </div>
+                <div class="b4-col-12 b4-col-md-4" draggable="true">
+                    <div class="grid-demo-box">Column 3</div>
+                </div>
+            `;
+            
+            // Reset draggable functionality
+            setupDraggableGrid();
+        });
+        
+        // Code Editor
+        const htmlEditor = document.getElementById('htmlEditor');
+        const previewPane = document.getElementById('previewPane');
+        
+        function updatePreview() {
+            previewPane.innerHTML = htmlEditor.value;
+        }
+        
+        htmlEditor.addEventListener('input', updatePreview);
+        
+        // Initialize preview
+        updatePreview();
+        
+        // Template examples
+        const templates = {
+            basic: `<div class="b4-container">
+  <div class="b4-row">
+    <div class="b4-col-12 b4-col-md-6 b4-col-lg-4">
+      <div class="b4-p-3 b4-bg-primary b4-text-light b4-rounded">Column 1</div>
+    </div>
+    <div class="b4-col-12 b4-col-md-6 b4-col-lg-4">
+      <div class="b4-p-3 b4-bg-secondary b4-text-light b4-rounded">Column 2</div>
+    </div>
+    <div class="b4-col-12 b4-col-md-12 b4-col-lg-4">
+      <div class="b4-p-3 b4-bg-info b4-text-light b4-rounded">Column 3</div>
+    </div>
+  </div>
+</div>`,
+            card: `<div class="b4-container">
+  <div class="b4-row">
+    <div class="b4-col-12 b4-col-md-6 b4-col-lg-4">
+      <div class="b4-card">
+        <div class="b4-card-body">
+          <h5 class="b4-card-title">Card Title</h5>
+          <p class="b4-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="b4-btn b4-btn-primary">Go somewhere</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+            hero: `<div class="b4-container">
+  <div class="b4-row b4-items-center">
+    <div class="b4-col-12 b4-col-md-6">
+      <h2 class="b4-text-3xl b4-font-bold b4-mb-3">Welcome to 404 Brotherhood</h2>
+      <p class="b4-text-muted b4-mb-4">A utility-first CSS framework for rapidly building custom user interfaces.</p>
+      <button class="b4-btn b4-btn-primary b4-mr-2">Get Started</button>
+      <button class="b4-btn b4-btn-outline-primary">Learn More</button>
+    </div>
+    <div class="b4-col-12 b4-col-md-6">
+      <div class="b4-bg-light b4-p-5 b4-rounded b4-text-center">
+        <div class="b4-text-5xl b4-text-primary b4-mb-3">
+          <i class="fas fa-code"></i>
+        </div>
+        <p class="b4-text-lg">Build websites faster than ever</p>
+      </div>
+    </div>
+  </div>
+</div>`,
+            form: `<div class="b4-container">
+  <div class="b4-row b4-justify-center">
+    <div class="b4-col-12 b4-col-md-8 b4-col-lg-6">
+      <div class="b4-card">
+        <div class="b4-card-body">
+          <h3 class="b4-card-title b4-text-center b4-mb-4">Contact Us</h3>
+          <div class="b4-mb-3">
+            <label class="b4-mb-1 b4-block">Name</label>
+            <input type="text" class="b4-p-2 b4-border b4-rounded b4-w-100" placeholder="Enter your name">
+          </div>
+          <div class="b4-mb-3">
+            <label class="b4-mb-1 b4-block">Email</label>
+            <input type="email" class="b4-p-2 b4-border b4-rounded b4-w-100" placeholder="Enter your email">
+          </div>
+          <div class="b4-mb-3">
+            <label class="b4-mb-1 b4-block">Message</label>
+            <textarea class="b4-p-2 b4-border b4-rounded b4-w-100" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <button class="b4-btn b4-btn-primary b4-w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+        };
+        
+        // Template buttons
+        const templateButtons = document.querySelectorAll('[data-template]');
+        templateButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const templateName = this.getAttribute('data-template');
+                htmlEditor.value = templates[templateName];
+                updatePreview();
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
