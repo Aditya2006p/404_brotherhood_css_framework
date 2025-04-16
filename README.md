@@ -106,4 +106,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or feedback, feel free to reach out:
 
 - **GitHub**: [Aditya2006p](https://github.com/Aditya2006p)
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Email**: [kingsong7060@gmail.com](mailto:kingsong7060@gmail.com)
