@@ -18,12 +18,12 @@ To use the 404 Brotherhood CSS Framework in your project, include the following 
 
 ### CSS
 ```html
-<link rel="stylesheet" href="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.css">
+<link rel="stylesheet" href="https://adityapandey-dev.github.io/404_brotherhood_css_framework/Main.css">
 ```
 
 ### JavaScript
 ```html
-<script src="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.js"></script>
+<script src="https://adityapandey-dev.github.io/404_brotherhood_css_framework/Main.js"></script>
 ```
 
 ### Example
@@ -36,7 +36,7 @@ Add the above links to your HTML file like this:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.css">
+    <link rel="stylesheet" href="https://adityapandey-dev.github.io/404_brotherhood_css_framework/Main.css">
 </head>
 <body>
     <h1 class="b4-text-2xl b4-font-bold b4-text-primary">Hello, 404 Brotherhood!</h1>
@@ -79,7 +79,7 @@ The framework includes a responsive 12-column grid system built with Flexbox. Ex
 
 ## Live Demo
 
-Check out the live demo of the framework: [404 Brotherhood Demo](https://aditya2006p.github.io/404_brotherhood_css_framework/)
+Check out the live demo of the framework: [404 Brotherhood Demo](https://adityapandey-dev.github.io/404_brotherhood_css_framework/)
 
 ---
 
@@ -105,5 +105,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, feel free to reach out:
 
-- **GitHub**: [Aditya2006p](https://github.com/Aditya2006p)
+- **GitHub**: [Aditya2006p](https://github.com/adityapandey-dev)
 - **Email**: [kingsong7060@gmail.com](mailto:kingsong7060@gmail.com)
