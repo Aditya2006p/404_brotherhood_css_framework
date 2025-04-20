@@ -1,9 +1,3 @@
-/**
- * 404 Brotherhood CSS Framework
- * Main JavaScript File
- */
-
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('darkModeToggle');
