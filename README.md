@@ -40,7 +40,7 @@ Add the above links to your HTML file like this:
 </head>
 <body>
     <h1 class="b4-text-2xl b4-font-bold b4-text-primary">Hello, 404 Brotherhood!</h1>
-    <script src="https://aditya2006p.github.io/404_brotherhood_css_framework/Main.js"></script>
+    <script src="https://adityapandey-dev.github.io/404_brotherhood_css_framework/Main.js"></script>
 </body>
 </html>
 ```
